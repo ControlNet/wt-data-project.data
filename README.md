@@ -5,7 +5,11 @@ Data collected in wt-data-project.
 The visualization part is in this [repo](https://github.com/ControlNet/wt-data-project.visualization)
 
 ## Time-series RB battle ranks data
-File `rb_ranks.csv`: containing a time-series from 2019-11-22 until now, and grouped as battle rating ranges.
+File `rb_ranks_1.csv`: containing a time-series from 2019-11-22 until now, and grouped as battle rating ranges = 1.0.
+
+File `rb_ranks_0.csv`: time-series data for each battle rating and nation
+
+File `rb_ranks_all.csv`: time-series data for each nation, aggregated by all battle ratings
 
 The overall stats is calculated with weighted average, and the weight is the `battles` in thunderskill data.
 
