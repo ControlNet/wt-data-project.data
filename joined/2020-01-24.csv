@@ -211,7 +211,7 @@ p-47m-1-re_boxted,36.0,64.0,1.5,1.8,0.68,0.85,101.0,,,2.0,,1.0,,,,,,,⋠P-47M-1-
 f7f1,129.0,82.26,3.87,2.85,0.98,0.69,278.0,68.1,3.27,3.82,2.17,2.51,28.0,100.0,1.83,1.83,,,F7F-1,F7F-1,USA,Aviation,6.7,6.0,6.3
 bf-109g-14,2519.0,57.88,2.42,2.45,0.17,0.17,451.0,70.0,2.42,2.28,1.15,1.08,182.0,88.41,6.55,5.5,0.58,0.42,Bf_109_G-14,Bf_109_G-14,Germany,Aviation,5.7,5.3,5.0
 f8f1b_france,190.0,49.41,3.52,2.95,1.27,1.29,2406.0,75.83,1.01,1.05,1.96,2.04,32.0,100.0,1.0,,1.0,,F8F-1B,F8F-1B_(France),France,Aviation,6.3,6.3,6.3
-spitfire_ix_ussr,,,,,,,31.0,100.0,1.78,1.59,,,,,,,,,Spitfire_Mk_IXc,Spitfire_F_Mk_IXc,Britain,Aviation,4.3,4.7,4.7
+spitfire_ix_ussr,,,,,,,31.0,100.0,1.78,1.59,,,,,,,,,Spitfire_Mk_IXc,Spitfire_Mk_IXc_(USSR),USSR,Aviation,5.7,5.7,5.0
 so_8000_narval,47.0,80.56,1.03,0.93,1.83,1.72,1158.0,59.91,1.6,1.41,1.63,1.43,5.0,,,1.6,,1.0,S.O.8000_Narval,S.O.8000_Narval,France,Aviation,5.7,5.7,5.7
 ju-288c,1447.0,55.81,0.24,0.21,2.98,2.48,6870.0,58.24,0.34,0.45,1.32,1.73,208.0,42.86,4.29,1.41,4.46,1.96,Ju_288_C,Ju_288_C,Germany,Aviation,5.7,5.7,5.7
 a-26c,87.0,80.59,0.79,0.44,7.86,3.38,347.0,96.7,0.21,0.23,2.62,2.4,35.0,,,,,,A-26C-45,A-26C-45,USA,Aviation,5.3,5.3,5.7
@@ -1068,7 +1068,7 @@ germ_panzerjager_nashorn,1045.0,52.74,,,2.01,1.99,747.0,35.32,,,3.54,2.35,55.0,1
 germ_pzsfl_IVa_dickermax,1288.0,52.87,0.1,0.1,2.72,3.33,446.0,27.3,,,4.16,2.4,14.0,,,,,,Dicker_Max,Dicker_Max,Germany,Ground_vehicles,4.7,4.3,4.3
 germ_flakpanzer_IV_Wirbelwind,6836.0,47.07,2.08,3.72,0.75,1.34,13472.0,44.78,0.4,0.5,0.41,0.48,174.0,14.0,2.22,1.11,0.94,0.5,Wirbelwind,Wirbelwind,Germany,Ground_vehicles,3.7,3.7,3.7
 germ_jgdpz_38t,2683.0,57.62,0.04,0.04,2.46,2.39,2459.0,43.85,,,2.5,2.05,6.0,50.0,,,1.0,2.0,Jagdpanzer_38(t),Jagdpanzer_38(t),Germany,Ground_vehicles,4.7,4.3,4.3
-germ_kv_1B_finland,2293.0,63.14,0.06,0.06,4.21,4.05,7443.0,70.84,,,3.66,3.97,,,,,,,KV-IB,Ki-49-IIb,Japan,Aviation,3.7,3.7,4.0
+germ_kv_1B_finland,2293.0,63.14,0.06,0.06,4.21,4.05,7443.0,70.84,,,3.66,3.97,,,,,,,KV-IB,KV-IB_(Germany),Germany,Ground_vehicles,4.3,4.0,4.3
 ussr_su_57b,253.0,50.59,0.15,0.03,3.0,1.35,225.0,42.36,,,2.17,1.64,45.0,100.0,,,2.0,1.61,SU-57B,SU-57B,USSR,Ground_vehicles,3.3,3.3,3.3
 uk_17_pdr_m10_achilles,1049.0,51.01,0.02,0.02,1.84,1.97,830.0,74.86,,,2.0,1.17,,,,,,,Achilles,Achilles,Britain,Ground_vehicles,4.0,4.0,4.0
 us_m24_chaffee_tl,898.0,70.36,0.01,0.01,3.89,4.39,460.0,71.22,,,2.51,2.86,20.0,,,,,,M24_(TL),M24_(TL),USA,Ground_vehicles,3.3,3.3,3.3
@@ -1349,7 +1349,7 @@ germ_destroyer_class1936_z20,,,,,,,,,,,,,,,,,,,Type_1936,Type_1936,Germany,Fleet
 germ_destroyer_class1939_t22,,,,,,,,,,,,,,,,,,,Type_1939,Type_1936,Germany,Fleet,4.3,4.3,4.3
 germ_kanonenboot_k2,,,,,,,,,,,,,,,,,,,Kanonenboot_K-2,Kanonenboot_K-2,Germany,Fleet,3.7,3.7,3.7
 germ_destroyer_class1936_z20_karlgalster,,,,,,,,,,,,,,,,,,,Z-20_Karl_Galster,Z20_Karl_Galster,Germany,Fleet,4.3,4.3,4.3
-germ_destroyer_class1924_leopard1932,,,,,,,,,,,,,,,,,,,Type_1924,Type_94,Japan,Ground_vehicles,1.3,1.3,1.3
+germ_destroyer_class1924_leopard1932,,,,,,,,,,,,,,,,,,,Type_1924,Type_1924_Leopard,Germany,Fleet,3.7,3.7,3.7
 ussr_destroyer_7y,,,,,,,,,,,,,,,,,,,Pr._7U,Pr._7U,USSR,Fleet,4.3,4.3,4.3
 ussr_destroyer_frunze,,,,,,,,,,,,,,,,,,,Frunze,Frunze,USSR,Fleet,3.7,3.7,3.7
 ussr_skr_pr159,,,,,,,,,,,,,,,,,,,Pr._159,Pr._159,USSR,Fleet,4.0,4.0,4.0
