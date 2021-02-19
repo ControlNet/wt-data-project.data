@@ -760,7 +760,7 @@ Javelin_F.(A.W.)_Mk.9,Britain,Aviation,8.7,8.7,8.7
 MiG-17,USSR,Aviation,9.0,9.0,9.0
 MiG-19PT,USSR,Aviation,10.3,10.3,10.3
 MiG-19S_(Germany),Germany,Aviation,10.3,10.3,10.3
-MiG-21_F-13,USSR,Aviation,10.3,10.3,10.3
+MiG-21F-13,USSR,Aviation,10.3,10.3,10.3
 Mitsubishi_T-2,Japan,Aviation,10.3,10.3,10.3
 Phantom_FGR.2,Britain,Aviation,10.3,10.3,10.3
 Super_Mystere_B2,France,Aviation,9.0,9.0,9.0
@@ -1136,7 +1136,7 @@ Pz.Bef.Wg.VI_P,Germany,Ground_vehicles,5.7,5.7,5.7
 Ru_251,Germany,Ground_vehicles,6.7,6.7,6.7
 ST-A1,Japan,Ground_vehicles,6.3,6.3,6.3
 ST-A2,Japan,Ground_vehicles,6.3,6.3,6.3
-Strv_81_(Rb.52),Britain,Ground_vehicles,6.7,6.7,6.3
+Strv_81_(RB_52),Britain,Ground_vehicles,6.7,6.7,6.3
 SU-100,USSR,Ground_vehicles,6.3,6.3,6.7
 SU-100_(China),China,Ground_vehicles,6.3,6.3,6.7
 SU-100P,USSR,Ground_vehicles,6.7,6.7,6.7
