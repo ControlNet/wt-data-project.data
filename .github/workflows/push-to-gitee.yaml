@@ -3,7 +3,7 @@ name: push-to-gitee
 on: [push]
 
 jobs:
-  build:
+  sync:
 
     runs-on: ubuntu-20.04
 
@@ -50,4 +50,4 @@ jobs:
         git commit -m "update"
 
     - name: Push to gitee
-      run: git push --force
+      run: git push origin HEAD:master --force
