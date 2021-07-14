@@ -1,0 +1,45 @@
+name: push-to-gitee
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Init
+      run: |
+        git clone https://gitee.com/controlnet/wt-data-project.data.git
+        cp -r joined wt-data-project.data/joined
+        cp -r ts wt-data-project.data/ts
+        cp -r wk wt-data-project.data/wk
+        cp ab_ranks_0.csv wt-data-project.data
+        cp ab_ranks_1.csv wt-data-project.data
+        cp ab_ranks_all.csv wt-data-project.data
+        cp rb_ranks_0.csv wt-data-project.data
+        cp rb_ranks_1.csv wt-data-project.data
+        cp rb_ranks_all.csv wt-data-project.data
+        cp sb_ranks_0.csv wt-data-project.data
+        cp sb_ranks_1.csv wt-data-project.data
+        cp sb_ranks_all.csv wt-data-project.data
+        cp README.md wt-data-project.data
+        cp LICENSE wt-data-project.data
+        cp .gitignore wt-data-project.data
+
+    - name: Push to gitee
+      env:
+        ACTION_DEPLOY_KEY: ${{ secrets.GITEE_PRIVATE }}\
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$GITEE_PRIVATE" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.email "smczx@hotmail.com"
+        git config --global user.name "ControlNet"
+
+        cd wt-data-project.data
+        git add -A
+        git commit -m "update"
+        git push
