@@ -14,6 +14,7 @@ jobs:
         mkdir -p ~/.ssh/
         echo "$GITEE_PRIVATE" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
+        ssh-agent -s
         ssh-add ~/.ssh/id_rsa
         git config --global user.email "smczx@hotmail.com"
         git config --global user.name "ControlNet"
