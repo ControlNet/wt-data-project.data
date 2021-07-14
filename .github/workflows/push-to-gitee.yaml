@@ -43,11 +43,9 @@ jobs:
         cp LICENSE wt-data-project.data
         cp .gitignore wt-data-project.data
 
-    - name: Commit the changes
+    - name: Commit and Push
       run: |
         cd wt-data-project.data
         git add -A
         git commit -m "update"
-
-    - name: Push to gitee
-      run: git push origin HEAD:master --force
+        git push origin HEAD:master --force
