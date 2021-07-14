@@ -10,9 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Init git
+      env:
+        ACTION_DEPLOY_KEY: ${{ secrets.GITEE_PRIVATE }}
       run: |
         mkdir -p ~/.ssh/
-        echo "$GITEE_PRIVATE" > ~/.ssh/id_rsa
+        echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         eval "$(ssh-agent)"
         ssh-add ~/.ssh/id_rsa
