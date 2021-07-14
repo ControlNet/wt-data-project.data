@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Init
       run: |
-        git clone https://gitee.com/controlnet/wt-data-project.data.git
+        git clone git@gitee.com:controlnet/wt-data-project.data.git
         cp -r joined wt-data-project.data/joined
         cp -r ts wt-data-project.data/ts
         cp -r wk wt-data-project.data/wk
