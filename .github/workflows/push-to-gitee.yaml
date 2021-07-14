@@ -11,13 +11,14 @@ jobs:
     - uses: actions/checkout@v1
     - name: Init git
       env:
-        ACTION_DEPLOY_KEY: ${{ secrets.GITEE_PRIVATE }}
+        GITEE_PRIVATE: ${{ secrets.GITEE_PRIVATE }}
       run: |
         mkdir -p ~/.ssh/
-        echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+        echo "$GITEE_PRIVATE" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         eval "$(ssh-agent)"
         ssh-add ~/.ssh/id_rsa
+        ssh-keyscan -H gitee.com >> ~/.ssh/known_hosts
         git config --global user.email "smczx@hotmail.com"
         git config --global user.name "ControlNet"
 
