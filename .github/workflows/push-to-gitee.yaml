@@ -50,4 +50,4 @@ jobs:
         git commit -m "update"
 
     - name: Push to gitee
-      run: git push
+      run: git push --force
