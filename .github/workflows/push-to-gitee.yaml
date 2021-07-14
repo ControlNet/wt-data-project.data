@@ -9,9 +9,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Init
+    - name: Init git
       run: |
-        git clone git@gitee.com:controlnet/wt-data-project.data.git
+        mkdir -p ~/.ssh/
+        echo "$GITEE_PRIVATE" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+        git config --global user.email "smczx@hotmail.com"
+        git config --global user.name "ControlNet"
+
+    - name: Clone from gitee
+      run: git clone git@gitee.com:controlnet/wt-data-project.data.git
+
+    - name: Update the files
+      run: |
         cp -r joined wt-data-project.data/joined
         cp -r ts wt-data-project.data/ts
         cp -r wk wt-data-project.data/wk
@@ -28,18 +39,11 @@ jobs:
         cp LICENSE wt-data-project.data
         cp .gitignore wt-data-project.data
 
-    - name: Push to gitee
-      env:
-        ACTION_DEPLOY_KEY: ${{ secrets.GITEE_PRIVATE }}\
+    - name: Commit the changes
       run: |
-        mkdir -p ~/.ssh/
-        echo "$GITEE_PRIVATE" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-        git config --global user.email "smczx@hotmail.com"
-        git config --global user.name "ControlNet"
-
         cd wt-data-project.data
         git add -A
         git commit -m "update"
-        git push
+
+    - name: Push to gitee
+      run: git push
