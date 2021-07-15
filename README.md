@@ -34,7 +34,7 @@ Data collected in wt-data-project.
 </table>
 
 ## Visualization
-The visualization part is in this [repo](https://github.com/ControlNet/wt-data-project.visualization)
+The visualization part is in this [webpage](https://wt.controlnet.space).
 
 ## Time-series RB battle ranks data
 File `rb_ranks_1.csv`: containing a time-series from 2019-11-22 until now, and grouped as battle rating ranges = 1.0.
