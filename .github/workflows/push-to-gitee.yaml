@@ -27,9 +27,9 @@ jobs:
 
     - name: Update the files
       run: |
-        cp -r joined wt-data-project.data/joined
-        cp -r ts wt-data-project.data/ts
-        cp -r wk wt-data-project.data/wk
+        cp joined/* wt-data-project.data/joined
+        cp ts/* wt-data-project.data/ts
+        cp wk/* wt-data-project.data/wk
         cp ab_ranks_0.csv wt-data-project.data
         cp ab_ranks_1.csv wt-data-project.data
         cp ab_ranks_all.csv wt-data-project.data
