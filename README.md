@@ -36,6 +36,9 @@ Data collected in wt-data-project.
 ## Visualization
 The visualization part is in this [webpage](https://wt.controlnet.space).
 
+## Other links
+The dataset is also hosted on [Kaggle](https://www.kaggle.com/datasets/controlnet999/wt-data-project).
+
 ## Time-series RB battle ranks data
 File `rb_ranks_1.csv`: containing a time-series from 2019-11-22 until now, and grouped as battle rating ranges = 1.0.
 
